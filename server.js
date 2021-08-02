@@ -76,4 +76,4 @@ const sendMailNotification = (user,citiesForecast) => {
 };
 
 setInterval(getDailyForecastByCity, config.API_POLL_INTERVAL_HOURS * 60 * 60 * 1000);
-setInterval(() => console.log('Keep alive'), 20 * 60 * 1000);
+setInterval(() => console.log('Keep alive'), 15 * 60 * 1000);

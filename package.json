@@ -4,6 +4,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "nodemailer": "^6.6.3"
   }
 }
