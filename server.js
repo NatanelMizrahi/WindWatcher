@@ -77,3 +77,11 @@ const sendMailNotification = (user,citiesForecast) => {
 
 setInterval(getDailyForecastByCity, config.API_POLL_INTERVAL_HOURS * 60 * 60 * 1000);
 setInterval(() => console.log('Keep alive'), 15 * 60 * 1000);
+
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => res.send('Hello World!'));
+app.listen(port, () => console.log("app listening on port " + port));
