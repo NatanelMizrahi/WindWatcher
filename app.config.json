@@ -1,0 +1,30 @@
+{
+	"API_KEY": "6bb78ba56cb7bf02c2471aa7fc30bb0d",
+	"API_POLL_INTERVAL_HOURS": 24,
+	"MIN_SPEED": 4.5,
+	"MAX_SPEED": 20,
+	"MIN_HOUR": 7,
+	"MAX_HOUR": 16,
+	"DAYS" : 2, 
+	"HOUR_INTERVAL": 3,
+	"cities" : [
+		"Atlit",
+		"Haifa",
+		"Herzliya",
+		"Hadera",
+		"Qiryat Yam",
+		"Nahariya",
+		"Eilat"
+	],
+	"ANGLE_RANGES": [
+		[ 150, 190 ],
+		[ 330, 360 ],
+		[ 0, 30 ]
+	],
+	"degreeTolerance" : 30,
+	"SENDER_MAIL" : "z055666666@gmail.com",
+	"SENDER_PASSWORD" : "nameofthewind",
+	"subscribers": [
+		"natanel.mizrahi@gmail.com"
+	]
+}
