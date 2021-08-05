@@ -20,7 +20,7 @@ const getForecast = async () => await Promise.all(config.cities.map(getCityForec
 
 const getDailyForecastByCity = async () => {
 	const forecast = await getForecast();
-	console.log(forecast);
+//	console.log(forecast);
 	const validEntries = forecast.map(filterEntries);
 	const validEntriesPerCity = {};
 	let validEntryExists = false;
@@ -32,7 +32,7 @@ const getDailyForecastByCity = async () => {
 		}
 	}
 	if (validEntryExists)
-		sendMailNotification(user, validEntriesPerCity);
+		sendMailNotification(validEntriesPerCity);
 };
 
 // const zip = rows=>rows[0].map((_,c)=>rows.map(row=>row[c]));
@@ -60,7 +60,7 @@ var transporter=nodemailer.createTransport({
     }
   });
 
-const sendMailNotification = (user,citiesForecast) => {
+const sendMailNotification = (citiesForecast) => {
 	var msg = formatMessage(citiesForecast);
 	var options = {
       from: 'WindWatcher',
@@ -76,12 +76,12 @@ const sendMailNotification = (user,citiesForecast) => {
 };
 
 setInterval(getDailyForecastByCity, config.API_POLL_INTERVAL_HOURS * 60 * 60 * 1000);
-setInterval(() => console.log('Keep alive'), 15 * 60 * 1000);
+//setInterval(() => console.log('Keep alive'), 15 * 60 * 1000);
+//const express = require('express')
+//const app = express()
+//const port = process.env.PORT || 3000;
+//
+//app.get('/', (req, res) => res.send('Hello World!'));
+//app.listen(port, () => console.log("app listening on port " + port));
 
-
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 3000;
-
-app.get('/', (req, res) => res.send('Hello World!'));
-app.listen(port, () => console.log("app listening on port " + port));
+getDailyForecastByCity();

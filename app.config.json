@@ -1,11 +1,11 @@
 {
 	"API_KEY": "6bb78ba56cb7bf02c2471aa7fc30bb0d",
-	"API_POLL_INTERVAL_HOURS": 4,
-	"MIN_SPEED": 5,
+	"API_POLL_INTERVAL_HOURS": 12,
+	"MIN_SPEED": 13,
 	"MAX_SPEED": 20,
 	"MIN_HOUR": 7,
 	"MAX_HOUR": 16,
-	"DAYS" : 2, 
+	"DAYS" : 7,
 	"HOUR_INTERVAL": 3,
 	"cities" : [
 		"Atlit",
@@ -25,6 +25,7 @@
 	"SENDER_MAIL" : "z055666666@gmail.com",
 	"SENDER_PASSWORD" : "nameofthewind",
 	"subscribers": [
-		"natanel.mizrahi@gmail.com"
+		"natanel.mizrahi@gmail.com",
+        "soofgo@gmail.com"
 	]
 }
